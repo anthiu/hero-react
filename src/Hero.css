@@ -1,0 +1,247 @@
+li {
+  list-style-type: none;
+}
+.hero-input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.hero-input-form input {
+  height: 40px;
+}
+.hero-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-card_item img {
+  width: 100%;
+  border-radius: 0px;
+}
+
+.hero-name {
+  font-weight: bold;
+  font-size: 20px;
+}
+.card {
+  width: 32%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 0px;
+  text-align: center;
+  cursor: pointer;
+  background: #ffffffb8;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  box-sizing: border-box;
+}
+@keyframes hitEffect {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  30% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  60% {
+    transform: scale(0.95);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes screenShake {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-5px, 5px);
+  }
+  50% {
+    transform: translate(5px, -5px);
+  }
+  75% {
+    transform: translate(-5px, -5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.battle-hit {
+  animation: hitEffect 0.5s ease;
+  box-shadow: 0 0 20px red;
+}
+
+.screen-shake {
+  animation: screenShake 0.4s ease;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 10px;
+  justify-content: end;
+}
+
+.search-input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 200px;
+  outline: none;
+  display: flex;
+  gap: 10px;
+  align-items: end;
+}
+
+.card:hover {
+  background-color: beige;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  padding: 0;
+  border: 2px solid transparent;
+}
+.hero-input-form {
+  width: 50%;
+  display: flex;
+  gap: 10px;
+}
+.hero-create-container {
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #c8aa6e;
+  /* border-radius: 100px; */
+  /* box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px; */
+  color: #0a1428;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Spiegel, sans-serif;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  /* box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px; */
+  transform: scale(1.05) rotate(-1deg);
+}
+input {
+  padding: 7px;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #fbfbfb;
+  border: 2px solid transparent;
+  height: 36px;
+  box-shadow: 0 0 0 1px #dddddd, 0 2px 4px 0 rgb(0 0 0 / 7%),
+    0 1px 1.5px 0 rgb(0 0 0 / 5%);
+}
+.hero h1 {
+  color: lightsalmon;
+  font-family: emoji;
+  font-size: 40px;
+}
+.not-found {
+  color: lightsalmon;
+  font-size: 30px;
+  font-family: emoji;
+}
+.create-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.submit-create {
+  margin-top: 10px;
+}
+.button-edit {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+.hero-card-button {
+  display: flex;
+  max-height: 60px;
+  opacity: 0;
+}
+
+.hero h1 {
+  color: #ec4d37;
+  font-size: 40px;
+}
+.hero-card-button {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.card.selected {
+  border: 2px solid red;
+  background: #ffeaea;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #0a1428;
+}
+
+.hero-card-button:hover {
+  opacity: 1;
+}
+.battle-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  color: #000000;
+  background-color: #ffffffb8;
+  margin-bottom: 20px;
+}
+#edit-stat {
+  color: #ec4d37;
+}
+.battle-title {
+  font-size: 30px;
+  color: #ec4d37;
+  text-align: center;
+  margin: 20px auto;
+  font-family: emoji;
+}
+
+.create-hero {
+  margin-bottom: 10px;
+}
+
+.div-button {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+}
+.show-input-search {
+  width: 55px;
+  height: 55px;
+  border-radius: 14%;
+  background-color: #fff;
+}

@@ -1,11 +1,16 @@
 import React from "react";
-import TodoList from "./TodoList";
+import Hero from "./Hero";
+import BattleScreen from "./BattleScreen";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <TodoList />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/battle/:ids" element={<BattleScreen />} />
+      </Routes>
+    </Router>
   );
 }
 
