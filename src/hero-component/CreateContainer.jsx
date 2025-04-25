@@ -12,6 +12,7 @@ export default function CreateContainer({
   setAmor,
   img,
   setImg,
+  setIsShowCreate,
 }) {
   return (
     <div className="create-container">
@@ -66,6 +67,7 @@ export default function CreateContainer({
               <button className="submit-create" type="submit">
                 Tạo anh hùng
               </button>
+              <button onClick={() => setIsShowCreate(false)}>Đóng</button>
             </div>
           </form>
         </div>

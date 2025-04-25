@@ -245,3 +245,54 @@ a {
   border-radius: 14%;
   background-color: #fff;
 }
+#box-title {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.hero-card-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.hero-card-stats-item {
+  width: 30%;
+  border: 1px solid #000000;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c8aa6e8c;
+}
+.hero-name {
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .hero-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-input-form {
+    width: 100%;
+  }
+  .hero-card_item img {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+  .hero-card-button {
+    opacity: 1;
+  }
+}

@@ -137,10 +137,11 @@ export default function HeroCard() {
         setImg={setImg}
         img={img}
         handleSubmit={handleSubmit}
+        setIsShowCreate={setIsShowCreate}
       />
-      <h1 style={{ textAlign: "center" }}>
-        Chọn 2 anh hùng để chiến giao chiến
-      </h1>
+      <div id="box-title">
+        <h1>CHỌN 2 ANH HÙNG ĐỂ CHIẾN GIAO CHIẾN</h1>
+      </div>
       <Search searchTerm={searchTerm} handleSearchHero={handleSearchHero} />
 
       <br />

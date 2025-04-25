@@ -43,9 +43,11 @@ export default function BattleScreen() {
         <div className={`card-hero ${animate ? "hit-flash" : ""}`}>
           <h1 style={{ color: "red" }}>{hero1.name}</h1>
           <img src={hero1.img} alt={hero1.name} />
-          <p>PHY: {hero1.phys}</p>
-          <p>MAG: {hero1.mag}</p>
-          <p>DEF: {hero1.amor}</p>
+          <div className="hero-stats">
+            <p>PHY🗡: {hero1.phys}</p>
+            <p>MAG✨: {hero1.mag}</p>
+            <p>DEF🛡: {hero1.amor}</p>
+          </div>
         </div>
         <div className="vs"></div>
         <div className={`card-hero ${animate ? "hit-flash" : ""}`}>

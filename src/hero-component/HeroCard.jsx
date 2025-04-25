@@ -16,14 +16,16 @@ export default function HeroCard({
 
         <div className="hero-card_info">
           <span className="hero-name">{supe.name}</span>
-          <div>
-            <span>PHY🗡:</span> {supe.phys}
-          </div>
-          <div>
-            <span>MAG✨:</span> {supe.mag}
-          </div>
-          <div>
-            <span>DEF🛡:</span> {supe.amor}
+          <div className="hero-card-stats">
+            <div className="hero-card-stats-item">
+              <span>PHY🗡:</span> {supe.phys}
+            </div>
+            <div className="hero-card-stats-item">
+              <span>MAG✨:</span> {supe.mag}
+            </div>
+            <div className="hero-card-stats-item">
+              <span>DEF🛡:</span> {supe.amor}
+            </div>
           </div>
           <div className="hero-card-button">
             <button

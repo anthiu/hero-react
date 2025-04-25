@@ -11,6 +11,7 @@ body {
   background-image: url(https://cdna.artstation.com/p/assets/images/images/015/610/068/large/artur-sadlos-leg-double-sh050-background-as-v003.jpg?1548955686);
   background-size: cover;
   background-repeat: no-repeat;
+  line-height: 1;
 }
 
 code {
