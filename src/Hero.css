@@ -251,7 +251,6 @@ a {
   align-items: center;
   justify-content: center;
   margin: 10px 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 .hero-card-stats {
   display: flex;
@@ -267,10 +266,12 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #c8aa6e8c;
+  font-weight: bold;
+  font-size: 15px;
 }
 .hero-name {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
   display: flex;
 
   justify-content: center;
@@ -294,5 +295,12 @@ a {
   }
   .hero-card-button {
     opacity: 1;
+  }
+  button:hover {
+    transform: none;
+  }
+  #box-title h1 {
+    font-size: 25px;
+    font-weight: bold;
   }
 }
