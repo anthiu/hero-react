@@ -158,7 +158,7 @@ input {
     0 1px 1.5px 0 rgb(0 0 0 / 5%);
 }
 .hero h1 {
-  color: lightsalmon;
+  /* color: lightsalmon; */
   font-family: emoji;
   font-size: 40px;
 }
@@ -192,7 +192,7 @@ input {
 }
 
 .hero h1 {
-  color: #ec4d37;
+  /* color: #ec4d37; */
   font-size: 40px;
 }
 
