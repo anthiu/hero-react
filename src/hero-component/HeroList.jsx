@@ -21,7 +21,7 @@ export default function HeroList({
           />
         ))
       ) : (
-        <p className="not-found">Không tìm thấy</p>
+        <p className="not-found">Không có anh hùng</p>
       )}
     </div>
   );
