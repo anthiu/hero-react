@@ -173,8 +173,8 @@ input {
   gap: 10px;
   background-color: #ffffffb8;
   margin: 10px 100px 0px 100px;
-  border-radius: 10px;
   border: 2px solid #c4b998;
+  box-sizing: border-box;
 }
 
 .submit-create {
@@ -314,7 +314,7 @@ a {
   height: 32px;
   padding-left: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 481px) {
   .hero-list {
     flex-direction: column;
     align-items: center;
@@ -391,5 +391,26 @@ a {
     font-weight: bold;
     color: black;
     font-size: 15px;
+  }
+}
+@media (max-width: 1125px) and (min-width: 768px) {
+  .hero-list {
+    /* flex-direction: column; */
+    align-items: center;
+  }
+  .hero-input-form {
+    width: 100%;
+  }
+  .hero-card_item img {
+    width: 100%;
+  }
+  .card {
+    width: 45%;
+  }
+  .hero-card-button {
+    opacity: 1;
+  }
+  button:hover {
+    transform: none;
   }
 }
