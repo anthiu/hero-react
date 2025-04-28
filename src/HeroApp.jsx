@@ -6,35 +6,33 @@ import EditContainer from "./hero-component/EditContainer.jsx";
 import Search from "./hero-component/Search.jsx";
 import HeroList from "./hero-component/HeroList.jsx";
 
-export const hero = [
-  {
-    id: 1,
-    name: "Lợn",
-    img: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sejuani_8.jpg",
-    phys: 100,
-    mag: 100,
-    amor: 80,
-  },
-  {
-    id: 2,
-    name: "Sóc",
-    img: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kennen_25.jpg",
-    phys: 100,
-    mag: 100,
-    amor: 80,
-  },
-  {
-    id: 3,
-    name: "Chó",
-    img: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KogMaw_9.jpg",
-    phys: 100,
-    mag: 100,
-    amor: 80,
-  },
-];
-
 export default function HeroCard() {
-  const [hero, setHero] = useState([]);
+  const [hero, setHero] = useState([
+    {
+      id: 1,
+      name: "Lợn",
+      img: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sejuani_8.jpg",
+      phys: 100,
+      mag: 100,
+      amor: 80,
+    },
+    {
+      id: 2,
+      name: "Sóc",
+      img: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kennen_25.jpg",
+      phys: 100,
+      mag: 100,
+      amor: 80,
+    },
+    {
+      id: 3,
+      name: "Chó",
+      img: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KogMaw_9.jpg",
+      phys: 100,
+      mag: 100,
+      amor: 80,
+    },
+  ]);
   const [searchTerm, setSearchTerm] = useState("");
   const [name, setName] = useState("");
   const [img, setImg] = useState("");
