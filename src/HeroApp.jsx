@@ -113,7 +113,9 @@ export default function HeroCard() {
 
   useEffect(() => {
     const data = loadHero();
-    setHero(data);
+    if (data.length > 0) {
+      setHero(data);
+    }
   }, []);
 
   const handleSubmit = (e) => {
