@@ -27,11 +27,11 @@ li {
 .card {
   width: 32%;
   padding: 10px;
-  border: 2px solid #ccc;
+  /* border: 2px solid #ccc; */
   border-radius: 0px;
   text-align: center;
   cursor: pointer;
-  background: #ffffffb8;
+  background: #525267b3;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
   box-sizing: border-box;
@@ -87,22 +87,26 @@ li {
   align-items: center;
   margin-bottom: 16px;
   gap: 10px;
-  justify-content: end;
+  justify-content: start;
+  background-color: #342b20;
+  height: 60px;
 }
 
 .search-input {
   padding: 8px 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
   width: 200px;
   outline: none;
   display: flex;
   gap: 10px;
   align-items: end;
+  color: #c4b998;
+  background-color: #342b2000;
+  border: none;
+  box-shadow: none;
 }
 
 .card:hover {
-  background-color: beige;
+  background-color: #5669bd4f;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
   padding: 0;
   border: 2px solid transparent;
@@ -124,13 +128,8 @@ label {
 }
 
 button {
-  background-color: #c8aa6e;
-  /* border-radius: 100px; */
-  /* box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
-    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
-    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
-    rgba(44, 187, 99, 0.15) 0 16px 32px; */
-  color: #0a1428;
+  background-color: #342b20cc;
+  color: #c4b998;
   cursor: pointer;
   display: inline-block;
   font-family: Spiegel, sans-serif;
@@ -146,10 +145,6 @@ button {
 }
 
 button:hover {
-  /* box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
-    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
-    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
-    rgba(44, 187, 99, 0.25) 0 16px 32px; */
   transform: scale(1.05) rotate(-1deg);
 }
 input {
@@ -179,7 +174,7 @@ input {
   background-color: #ffffffb8;
   margin: 10px 100px 0px 100px;
   border-radius: 10px;
-  border: 2px solid #ec4d37;
+  border: 2px solid #c4b998;
 }
 
 .submit-create {
@@ -213,7 +208,7 @@ input {
 }
 a {
   text-decoration: none;
-  color: #0a1428;
+  color: #c4b998;
 }
 
 .hero-card-button:hover {
@@ -272,14 +267,14 @@ a {
 }
 .hero-card-stats-item {
   width: 30%;
-  border: 1px solid #000000;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #c8aa6e8c;
+  background-color: #342b20cc;
   font-weight: bold;
   font-size: 15px;
+  color: #c4b998;
 }
 .hero-name {
   font-weight: bold;
@@ -289,6 +284,7 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 5px;
+  color: #c4b998;
 }
 #box-title h1 {
   font-weight: bold;
@@ -305,6 +301,18 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.champions {
+  color: #c4b998;
+  letter-spacing: 7px;
+  font-size: 24px;
+  text-indent: 8px;
+  font-family: Helvetica, Arial sans-serif;
+}
+.champion-icon {
+  width: 18px;
+  height: 32px;
+  padding-left: 10px;
 }
 @media (max-width: 768px) {
   .hero-list {
@@ -332,8 +340,7 @@ a {
     gap: 10px;
     background-color: #ffffffb8;
     width: 100%;
-    border-radius: 10px;
-    border: 2px solid #ec4d37;
+    border: 2px solid #c4b998;
     margin: 0;
   }
   #box-title h1 {
@@ -376,8 +383,8 @@ a {
     gap: 10px;
     background-color: #ffffffb8;
     width: 100%;
-    border-radius: 10px;
-    border: 2px solid #ec4d37;
+
+    border: 2px solid #c4b998;
     margin: 0;
   }
   #box-title h1 {

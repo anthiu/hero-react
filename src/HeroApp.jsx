@@ -165,11 +165,11 @@ export default function HeroCard() {
         setIsShowCreate={setIsShowCreate}
       />
       <div id="box-title">
-        <h1>CHỌN 2 ANH HÙNG ĐỂ CHIẾN GIAO CHIẾN</h1>
+        <h1>CHỌN 2 ANH HÙNG ĐỂ GIAO CHIẾN</h1>
       </div>
       <Search searchTerm={searchTerm} handleSearchHero={handleSearchHero} />
-
       <br />
+
       <HeroList
         filteredHeroes={filteredHeroes}
         selectedHero={selectedHero}
@@ -184,7 +184,6 @@ export default function HeroCard() {
         handleChange={handleChange}
       />
       <br />
-
       <div className="div-button">
         <button
           ref={battleButtonRef}
