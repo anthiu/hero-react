@@ -16,7 +16,7 @@ export default function CreateContainer({
 }) {
   return (
     <div className="create-container">
-      <div>
+      <div className="create-container-header">
         <h1>Tạo anh hùng mới</h1>
         <button className="create-hero" onClick={handleShowCreate}>
           <a href="#hero-create"> Nhấn để tạo anh hùng mới</a>
@@ -24,8 +24,9 @@ export default function CreateContainer({
       </div>
       {isShowCreate && (
         <div id="hero-create" className="hero-create-container">
-          <form onSubmit={handleSubmit} action="">
+          <form className="form-hero" onSubmit={handleSubmit} action="">
             <div className="hero-input-form">
+              <label htmlFor="name">Tên anh hùng</label>
               <input
                 name="name"
                 type="text"
@@ -33,6 +34,7 @@ export default function CreateContainer({
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
+              <label htmlFor="phys">Chỉ số vật lý</label>
               <input
                 name="phys"
                 type="number"
@@ -40,6 +42,7 @@ export default function CreateContainer({
                 value={phys}
                 onChange={(e) => setPhys(e.target.value)}
               />
+              <label htmlFor="mag">Chỉ số phép thuật</label>
               <input
                 name="mag"
                 type="number"
@@ -48,6 +51,7 @@ export default function CreateContainer({
                 onChange={(e) => setMag(e.target.value)}
                 required
               />
+              <label htmlFor="amor">Chỉ số phòng thủ</label>
               <input
                 name="amor"
                 type="number"
@@ -56,6 +60,7 @@ export default function CreateContainer({
                 onChange={(e) => setAmor(e.target.value)}
                 required
               />
+              <label htmlFor="img">Đường dẫn ảnh</label>
               <input
                 name="img"
                 type="text"

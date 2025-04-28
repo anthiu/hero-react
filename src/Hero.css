@@ -115,6 +115,12 @@ li {
 .hero-create-container {
   align-items: center;
   margin-bottom: 20px;
+  width: 100%;
+}
+label {
+  font-size: 15px;
+  font-weight: bold;
+  color: #0a1428;
 }
 
 button {
@@ -170,6 +176,10 @@ input {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  background-color: #ffffffb8;
+  margin: 10px 100px 0px 100px;
+  border-radius: 10px;
+  border: 2px solid #ec4d37;
 }
 
 .submit-create {
@@ -190,6 +200,7 @@ input {
   color: #ec4d37;
   font-size: 40px;
 }
+
 .hero-card-button {
   display: flex;
   justify-content: space-between;
@@ -251,6 +262,7 @@ a {
   align-items: center;
   justify-content: center;
   margin: 10px 0;
+  background-color: #ffffffb8;
 }
 .hero-card-stats {
   display: flex;
@@ -278,7 +290,22 @@ a {
   align-items: center;
   margin-top: 5px;
 }
+#box-title h1 {
+  font-weight: bold;
+  color: black;
+}
 
+.create-container-header {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+.form-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media (max-width: 768px) {
   .hero-list {
     flex-direction: column;
@@ -299,8 +326,63 @@ a {
   button:hover {
     transform: none;
   }
+  .create-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffffb8;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #ec4d37;
+    margin: 0;
+  }
   #box-title h1 {
-    font-size: 25px;
     font-weight: bold;
+    color: black;
+    font-size: 20px;
+  }
+  .hero-create-container {
+    align-items: center;
+    margin: 0 auto 20px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-input-form {
+    width: 100%;
+  }
+  .hero-card_item img {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+  .hero-card-button {
+    opacity: 1;
+  }
+  button:hover {
+    transform: none;
+  }
+  .create-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffffb8;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #ec4d37;
+    margin: 0;
+  }
+  #box-title h1 {
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
   }
 }
