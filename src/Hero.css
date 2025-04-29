@@ -275,12 +275,13 @@ a {
   font-weight: bold;
   font-size: 15px;
   color: #c4b998;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .hero-name {
   font-weight: bold;
   font-size: 30px;
   display: flex;
-
+  font-family: Arial, Helvetica, sans-serif;
   justify-content: center;
   align-items: center;
   margin-top: 5px;
@@ -357,7 +358,7 @@ a {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) and (min-width: 369px) {
   .hero-list {
     flex-direction: column;
     align-items: center;
@@ -412,5 +413,32 @@ a {
   }
   button:hover {
     transform: none;
+  }
+}
+@media (max-width: 368px) {
+  .hero-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-input-form {
+    width: 100%;
+  }
+  .hero-card_item img {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+  .hero-card-button {
+    opacity: 1;
+  }
+  button:hover {
+    transform: none;
+  }
+  .create-container-header h1 {
+    font-size: 20px;
+  }
+  #box-title h1 {
+    font-size: 15px;
   }
 }
