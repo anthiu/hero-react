@@ -24,6 +24,30 @@ export default function HeroCard() {
       mag: 20,
       amor: 40,
     },
+    {
+      id: 3,
+      name: "Gà",
+      img: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Azir_0.jpg",
+      phys: 60,
+      mag: 70,
+      amor: 20,
+    },
+    {
+      id: 4,
+      name: "Chó",
+      img: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nasus_0.jpg",
+      phys: 50,
+      mag: 80,
+      amor: 10,
+    },
+    {
+      id: 5,
+      name: "Lợn",
+      img: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sejuani_8.jpg",
+      phys: 90,
+      mag: 60,
+      amor: 100,
+    },
   ]);
   const [searchTerm, setSearchTerm] = useState("");
   const [name, setName] = useState("");
