@@ -7,7 +7,24 @@ import Search from "./hero-component/Search.jsx";
 import HeroList from "./hero-component/HeroList.jsx";
 
 export default function HeroCard() {
-  const [hero, setHero] = useState([]);
+  const [hero, setHero] = useState([
+    {
+      id: 1,
+      name: "Sóc",
+      img: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kennen_25.jpg",
+      phys: 100,
+      mag: 50,
+      amor: 30,
+    },
+    {
+      id: 2,
+      name: "Cá",
+      img: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fizz_3.jpg",
+      phys: 80,
+      mag: 20,
+      amor: 40,
+    },
+  ]);
   const [searchTerm, setSearchTerm] = useState("");
   const [name, setName] = useState("");
   const [img, setImg] = useState("");
@@ -93,6 +110,9 @@ export default function HeroCard() {
     }
   }, []);
 
+  useEffect(() => {
+    saveHero(hero);
+  }, [hero]);
   const handleSubmit = (e) => {
     e.preventDefault();
     const newHero = {
