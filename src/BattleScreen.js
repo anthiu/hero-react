@@ -16,7 +16,6 @@ export default function BattleScreen() {
     const h2 = allHeroes.find((h) => h.id === id2);
     setHero1(h1);
     setHero2(h2);
-
     setAnimate(true); // trigger animation
     const timer = setTimeout(() => setAnimate(false), 1000);
     return () => clearTimeout(timer);
