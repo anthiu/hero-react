@@ -172,7 +172,7 @@ input {
   flex-direction: column;
   gap: 10px;
   background-color: #ffffffb8;
-  margin: 10px 100px 0px 100px;
+  margin: 10px 00px 0px 00px;
   border: 2px solid #c4b998;
   box-sizing: border-box;
 }
@@ -203,7 +203,7 @@ input {
 }
 .card.selected {
   border: 2px solid red;
-  background: #ffeaea;
+  background: #9c6161;
   box-sizing: border-box;
 }
 a {
