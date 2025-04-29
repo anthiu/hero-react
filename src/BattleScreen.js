@@ -59,7 +59,10 @@ export default function BattleScreen() {
         </div>
       </div>
       <div className="battle-result">
-        <h2>Kết quả trận đấu: {getBattleResult()}</h2>
+        <h2>
+          Kết quả trận đấu:{" "}
+          <span className="winner-hero">{getBattleResult()}</span>
+        </h2>
       </div>
       <button onClick={() => window.history.back()}>
         Quay lại chọn anh hùng
