@@ -6,6 +6,8 @@ export default function HeroList({
   handleToggle,
   setEditingHero,
   handleDeleteHero,
+  setModalType,
+  setIsShowModal,
 }) {
   return (
     <div className="hero-list">
@@ -18,6 +20,8 @@ export default function HeroList({
             handleToggle={handleToggle}
             setEditingHero={setEditingHero}
             handleDeleteHero={handleDeleteHero}
+            setModalType={setModalType}
+            setIsShowModal={setIsShowModal}
           />
         ))
       ) : (

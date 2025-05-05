@@ -4,6 +4,8 @@ export default function HeroCard({
   handleToggle,
   setEditingHero,
   handleDeleteHero,
+  setModalType,
+  setIsShowModal,
 }) {
   return (
     <li
@@ -29,10 +31,14 @@ export default function HeroCard({
           </div>
           <div className="hero-card-button">
             <button
-              onClick={() => setEditingHero({ ...supe })}
+              onClick={() => {
+                setEditingHero({ ...supe });
+                setModalType("edit");
+                setIsShowModal(true);
+              }}
               className="edit-button"
             >
-              <a href="#edit-stat">Sửa chỉ số</a>
+              Sửa chỉ số
             </button>
             <button
               className="delete-hero"

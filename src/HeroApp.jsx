@@ -2,9 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 import { loadHero, saveHero } from "./local-storage/localHero.jsx";
 import { useNavigate } from "react-router-dom";
 import CreateContainer from "./hero-component/CreateContainer.jsx";
-import EditContainer from "./hero-component/EditContainer.jsx";
+// import EditContainer from "./hero-component/EditContainer.jsx";
 import Search from "./hero-component/Search.jsx";
 import HeroList from "./hero-component/HeroList.jsx";
+import Modal from "./hero-component/Modal.jsx";
 
 export default function HeroCard() {
   const [hero, setHero] = useState([
@@ -61,6 +62,8 @@ export default function HeroCard() {
   const navigate = useNavigate();
   const stringiFields = ["name", "img"];
   const battleButtonRef = useRef(null);
+  const [isShowModal, setIsShowModal] = useState(false);
+  const [modalType, setModalType] = useState("");
 
   useEffect(() => {
     if (selectedHero.length === 2 && battleButtonRef.current) {
@@ -101,7 +104,8 @@ export default function HeroCard() {
   };
 
   const handleShowCreate = () => {
-    setIsShowCreate(!isShowCreate);
+    setModalType("create");
+    setIsShowModal(true);
   };
 
   const handleDeleteHero = (id) => {
@@ -167,6 +171,26 @@ export default function HeroCard() {
 
   return (
     <div className="hero-card">
+      <Modal
+        isShowModal={isShowModal}
+        setIsShowModal={setIsShowModal}
+        modalType={modalType}
+        handleSubmit={handleSubmit}
+        saveChangesHero={saveChangesHero}
+        name={name}
+        setName={setName}
+        phys={phys}
+        setPhys={setPhys}
+        mag={mag}
+        setMag={setMag}
+        amor={amor}
+        setAmor={setAmor}
+        img={img}
+        setImg={setImg}
+        editingHero={editingHero}
+        handleChange={handleChange}
+      />
+
       <CreateContainer
         handleShowCreate={handleShowCreate}
         isShowCreate={isShowCreate}
@@ -195,13 +219,10 @@ export default function HeroCard() {
         handleToggle={handleToggle}
         setEditingHero={setEditingHero}
         handleDeleteHero={handleDeleteHero}
+        setModalType={setModalType}
+        setIsShowModal={setIsShowModal}
       />
-      <EditContainer
-        editingHero={editingHero}
-        setEditingHero={setEditingHero}
-        saveChangesHero={saveChangesHero}
-        handleChange={handleChange}
-      />
+
       <br />
       <div className="div-button">
         <button
