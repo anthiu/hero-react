@@ -110,6 +110,11 @@ export default function HeroCard() {
   };
 
   const handleDeleteHero = (id) => {
+    const confirmDelete = window.confirm(
+      "Bạn có chắc chắn muốn xóa anh hùng này không?"
+    );
+    if (!confirmDelete) return;
+
     const updatedHero = hero
       .filter((h) => h.id !== id)
       .map((h, index) => ({
