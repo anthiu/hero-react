@@ -19,7 +19,7 @@ export default function CreateContainer({
       <div className="create-container-header">
         <h1>Tạo anh hùng mới</h1>
         <button className="create-hero" onClick={handleShowCreate}>
-          <a href="#hero-create"> Nhấn để tạo anh hùng mới</a>
+          <div> Nhấn để tạo anh hùng mới</div>
         </button>
       </div>
       {isShowCreate && (

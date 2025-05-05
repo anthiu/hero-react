@@ -65,7 +65,7 @@ img {
 
 .battle-result {
   display: flex;
-  font-size: 2rem;
+  font-size: 20px;
   color: #0f0f0f;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
