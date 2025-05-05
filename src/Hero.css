@@ -343,7 +343,6 @@ a {
   .create-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     background-color: #ffffffb8;
     width: 100%;
     border: 2px solid #c4b998;

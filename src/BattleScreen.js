@@ -48,7 +48,12 @@ export default function BattleScreen() {
             <p>DEF🛡: {hero1.amor}</p>
           </div>
         </div>
-        <div className="vs"></div>
+        <div className="battle-result">
+          <h2>
+            Kết quả trận đấu:{" "}
+            <span className="winner-hero">{getBattleResult()}</span>
+          </h2>
+        </div>
         <div className={`card-hero ${animate ? "hit-flash" : ""}`}>
           <h1 style={{ color: "blue" }}>{hero2.name}</h1>
           <img src={hero2.img} alt={hero2.name} />
@@ -57,12 +62,7 @@ export default function BattleScreen() {
           <p>DEF🛡: {hero2.amor}</p>
         </div>
       </div>
-      <div className="battle-result">
-        <h2>
-          Kết quả trận đấu:{" "}
-          <span className="winner-hero">{getBattleResult()}</span>
-        </h2>
-      </div>
+
       <button onClick={() => window.history.back()}>
         Quay lại chọn anh hùng
       </button>
