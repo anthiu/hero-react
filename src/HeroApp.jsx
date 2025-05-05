@@ -64,6 +64,7 @@ export default function HeroCard() {
   const battleButtonRef = useRef(null);
   const [isShowModal, setIsShowModal] = useState(false);
   const [modalType, setModalType] = useState("");
+  const [popupMessage, setPopupMessage] = useState("");
 
   useEffect(() => {
     if (selectedHero.length === 2 && battleButtonRef.current) {
@@ -129,6 +130,10 @@ export default function HeroCard() {
     );
     setEditingHero(null);
     saveHero(hero);
+    setPopupMessage("Cập nhật thành công");
+    setTimeout(() => {
+      setPopupMessage("");
+    }, 2000);
   };
 
   useEffect(() => {
@@ -155,6 +160,10 @@ export default function HeroCard() {
     const updatedHero = [...hero, newHero];
     saveHero(updatedHero);
     setHero(updatedHero);
+    setPopupMessage("Thêm mới thành công");
+    setTimeout(() => {
+      setPopupMessage("");
+    }, 2000);
     setName("");
     setImg("");
     setPhys("");
@@ -171,6 +180,7 @@ export default function HeroCard() {
 
   return (
     <div className="hero-card">
+      {popupMessage && <div className="popup-message">{popupMessage}</div>}
       <Modal
         isShowModal={isShowModal}
         setIsShowModal={setIsShowModal}

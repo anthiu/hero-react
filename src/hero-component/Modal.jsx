@@ -29,6 +29,7 @@ export default function Modal({
               onSubmit={modalType === "create" ? handleSubmit : saveChangesHero}
             >
               <div className="hero-input-form">
+                <span>Tên</span>
                 <input
                   name="name"
                   type="text"
@@ -41,6 +42,7 @@ export default function Modal({
                   }
                   required
                 />
+                <span>Sức mạnh công kích</span>
                 <input
                   name="phys"
                   type="number"
@@ -53,6 +55,7 @@ export default function Modal({
                   }
                   required
                 />
+                <span>Sức mạnh phép thuật</span>
                 <input
                   name="mag"
                   type="number"
@@ -65,6 +68,8 @@ export default function Modal({
                   }
                   required
                 />
+
+                <span>Phòng thủ</span>
                 <input
                   name="amor"
                   type="number"
@@ -77,6 +82,7 @@ export default function Modal({
                   }
                   required
                 />
+                <span>Đường dẫn ảnh</span>
                 <input
                   name="img"
                   type="text"
